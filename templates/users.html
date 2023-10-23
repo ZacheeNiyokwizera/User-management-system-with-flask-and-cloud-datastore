@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>List of Users</title>
+</head>
+<body>
+
+{% extends "template.html" %}
+{% block content %}
+<h1>List of Users</h1>
+<table>
+    <tr>
+        <th>User ID</th>
+        <th>Username</th>
+        <th>Email</th>
+    </tr>
+    {% for user in users %}
+    <tr>
+        <td>{{ user.key.id }}</td>
+        <td>{{ user['username'] }}</td>
+        <td>{{ user['email'] }}</td>
+    </tr>
+    {% endfor %}
+</table>
+{% endblock %}
+</body>
+</html>

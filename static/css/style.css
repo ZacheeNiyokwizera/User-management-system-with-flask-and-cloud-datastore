@@ -1,0 +1,117 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+footer {
+    width: 100%;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    background-color: #f4f4f4;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-shadow: 2px 0px 5px 0px #888888;
+}
+
+.logo {
+    margin: 0;
+    color: #333;
+}
+
+nav ul {
+    list-style: none;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+    font-size: 20px;
+}
+
+.centered-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+
+.centered-image {
+    max-width: 100%;
+    max-height: 100%;
+
+}
+
+.welcome {
+    width: 40%;
+    text-align: justify;
+    text-align-last: center;
+
+}
+
+/*styles for register and login form/page*/
+
+.auth-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+form {
+    max-width: 300px;
+    margin: 0 auto;
+    padding: 20px;
+    background: #ffffff;
+    box-shadow: 0px 0px 5px 0px #888888;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+}
+
+h1 {
+    text-align: center;
+    background: none;
+}
+
+input {
+    width: 275px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

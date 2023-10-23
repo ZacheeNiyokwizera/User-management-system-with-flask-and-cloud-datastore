@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8"/>
+    <title>Flask Parent Template</title>
+    <link
+            rel="stylesheet"
+            href="{{ url_for('static', filename='css/style.css') }}"
+    />
+</head>
+<body>
+<header>
+    <h1 class="logo">Flask Web App</h1>
+    <nav>
+        <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('about') }}">About</a></li>
+            <li><a href="{{ url_for('register') }}">Register</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+            <li><a href="{{ url_for('users') }}">Users</a></li>
+            {% if request.endpoint != 'dashboard' %}
+            <li><a href="{{ url_for('dashboard') }}">Dashboard</a></li>
+            {% endif %} {% if username %}
+            <li><a href="{{ url_for('logout') }}">Logout</a></li>
+            {% endif %}
+        </ul>
+    </nav>
+</header>
+
+<div class="content">{% block content %}{% endblock %}</div>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2023</p>
+        <p>Made with love by Dr Z</p>
+    </div>
+</footer>
+</body>
+</html>

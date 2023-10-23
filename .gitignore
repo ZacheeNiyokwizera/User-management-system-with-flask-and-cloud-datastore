@@ -1,0 +1,30 @@
+*.pyc
+*.orig
+
+# Note the leading slash - ignore the lib directory in the project root, but not for example /static/js/lib
+/lib
+
+# JetBrains IDE project files
+.idea
+
+bower_components
+node_modules
+venv
+
+
+# Windows image file caches
+Thumbs.db
+ehthumbs.db
+
+# Folder config file
+Desktop.ini
+
+# Icon must end with two \r
+Icon
+
+env
+
+# Thumbnails
+._*
+
+.env
